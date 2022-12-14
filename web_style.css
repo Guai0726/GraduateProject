@@ -130,3 +130,47 @@ body {
      background-color: beige;
      width: auto;
 }
+
+/*~~~~下面是我加的~~~~*/
+
+
+
+.container {
+        position: relative;
+        width: 50%;
+}
+      
+.duimage {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+}
+      
+.middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+}
+      
+.container:hover .duimage {
+        opacity: 0.3;
+}
+      
+.container:hover .middle {
+        opacity: 1;
+}
+      
+.dutext {
+        background-color: #51a099;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        padding: 32px 64px;
+}
